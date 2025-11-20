@@ -1,5 +1,8 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+
+import 'package:auto_route/auto_route.dart';
+
+import 'package:playground_flutter/features/general/widgets/home_item_view.dart';
 
 @RoutePage(name: "HomePageRoute")
 class HomePage extends StatelessWidget {
@@ -7,6 +10,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: SingleChildScrollView(
+        padding: const .symmetric(vertical: 16, horizontal: 8),
+        child: Center(
+          child: Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: List.generate(
+              20,
+              (index) => HomeItemView(title: 'Item ${index + 1}'),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
