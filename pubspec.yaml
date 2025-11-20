@@ -28,3 +28,15 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  fonts:
+    - family: NotoSansTC
+      fonts:
+        - asset: assets/fonts/NotoSansTC-Regular.ttf
+        - asset: assets/fonts/NotoSansTC-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/NotoSansTC-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/NotoSansTC-Bold.ttf
+          weight: 700
+

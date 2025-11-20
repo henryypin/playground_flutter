@@ -27,7 +27,10 @@ class _MyAppState extends State<MyApp> with PpThemedState {
     return MaterialApp.router(
       title: 'Playground Flutter',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(scaffoldBackgroundColor: ppTheme.color.background),
+      theme: ThemeData(
+        scaffoldBackgroundColor: ppTheme.color.background,
+        fontFamily: 'NotoSansTC',
+      ),
       routerConfig: _router.config(),
     );
   }
