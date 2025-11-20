@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:playground_flutter/pp_ui/theme/pp_base_color.dart';
-import 'package:playground_flutter/pp_ui/theme/pp_base_theme.dart';
+import '../pp_base_color.dart';
+import '../pp_base_theme.dart';
 
 class PpDarkTheme extends PpBaseTheme {
   @override
@@ -9,5 +9,11 @@ class PpDarkTheme extends PpBaseTheme {
 }
 
 class _PpDarkColor extends PpBaseColor {
-  const _PpDarkColor() : super(background: const Color(0xFF121212));
+  const _PpDarkColor()
+    : super(
+        background: const Color(0xFF121212),
+        appBarBackground: const Color(0xFF121212),
+        icon: const Color(0xFFB3B3B3),
+        divider: const Color(0xFF3A3A3A),
+      );
 }

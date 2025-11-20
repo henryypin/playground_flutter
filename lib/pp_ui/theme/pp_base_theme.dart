@@ -1,4 +1,4 @@
-import 'package:playground_flutter/pp_ui/theme/pp_base_color.dart';
+import 'pp_base_color.dart';
 
 class PpBaseTheme {
   const PpBaseTheme();

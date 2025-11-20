@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:provider/provider.dart';
 
-import 'package:playground_flutter/pp_ui/theme/pp_base_theme.dart';
+import 'pp_base_theme.dart';
 
 /// A provider class for managing the application's theme.
 ///
@@ -23,19 +23,6 @@ class PpThemeProvider extends ChangeNotifier {
     _theme = theme;
     notifyListeners();
   }
-}
-
-/// A mixin for stateless widgets to easily access the theme provider and theme.
-///
-/// Use this mixin on classes that extend [StatelessWidget] to get convenient access
-/// to the [PpThemeProvider] and the current [PpBaseTheme].
-mixin PpThemedWidget<T extends StatelessWidget> on StatelessWidget {
-  /// Returns the [PpThemeProvider] from the context.
-  PpThemeProvider ppThemeProvider(BuildContext context) =>
-      context.watch<PpThemeProvider>();
-
-  /// Returns the current [PpBaseTheme] from the context.
-  PpBaseTheme ppTheme(BuildContext context) => ppThemeProvider(context).theme;
 }
 
 /// A mixin for stateful widget states to easily access the theme provider and theme.
