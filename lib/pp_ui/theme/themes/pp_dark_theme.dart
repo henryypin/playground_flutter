@@ -15,6 +15,9 @@ class _PpDarkColor extends PpBaseColor {
         appBarBackground: const Color(0xFF121212),
         icon: const Color(0xFFB3B3B3),
         divider: const Color(0xFF3A3A3A),
+        border: const Color(0xFFE3E4E0),
+        shadow: const Color(0x66000000),
         appBarTitle: const Color(0xFFFFFFFF),
+        headline: const Color(0xFFFFFFFF),
       );
 }
