@@ -6,6 +6,7 @@ class PpBaseColor {
     this.appBarBackground = const Color(0xFFFFFFFF),
     this.icon = const Color(0xFF676767),
     this.divider = const Color(0xFFE0E0E0),
+    this.appBarTitle = const Color(0xFF212121),
   });
 
   final Color background;
@@ -15,4 +16,6 @@ class PpBaseColor {
   final Color icon;
 
   final Color divider;
+
+  final Color appBarTitle;
 }

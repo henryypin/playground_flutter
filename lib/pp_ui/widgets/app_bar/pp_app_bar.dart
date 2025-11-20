@@ -54,7 +54,14 @@ class _PpAppBarState extends State<PpAppBar> with PpThemedState<PpAppBar> {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: ppTheme.color.appBarBackground,
-      title: widget.title != null ? Text(widget.title!) : null,
+      title: widget.title != null
+          ? Text(
+              widget.title!,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: ppTheme.textStyle.appBarTitle,
+            )
+          : null,
       centerTitle: true,
       shape: Border(bottom: BorderSide(color: ppTheme.color.divider, width: 1)),
       elevation: 0,
