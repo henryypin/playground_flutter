@@ -19,5 +19,6 @@ class AppRouter extends RootStackRouter {
       page: HomePageRoute.page,
       transitionsBuilder: TransitionsBuilders.noTransition,
     ),
+    AutoRoute(page: ButtonPageRoute.page),
   ];
 }
