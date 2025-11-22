@@ -59,13 +59,9 @@ class _PpCartoonButtonState extends State<PpCartoonButton>
             ),
             borderRadius: BorderRadius.circular(widget.borderRadius + 2),
           ),
-          child: Stack(
-            children: [
-              widget.child,
-              // Top-left Shine spot
-
-              // Bottom-right Shadow spot
-            ],
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(widget.borderRadius + 2),
+            child: widget.child,
           ),
         ),
       ),

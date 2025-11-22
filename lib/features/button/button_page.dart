@@ -20,17 +20,38 @@ class _ButtonPageState extends State<ButtonPage> {
       appBar: const PpAppBar(type: .back, title: 'Button'),
       body: SingleChildScrollView(
         padding: const .symmetric(vertical: 16, horizontal: 8),
-        child: Center(
-          child: Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [
-              PpCartoonButton(
-                backgroundColor: Colors.lightGreen,
-                child: const Icon(Icons.star, size: 48),
-              ),
-            ],
-          ),
+        child: Column(
+          crossAxisAlignment: .start,
+          children: [
+            Text(
+              "PpCartoonButton:",
+              style: Theme.of(context).textTheme.titleMedium,
+            ),
+            const SizedBox(height: 8),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                const PpCartoonButton(
+                  backgroundColor: Colors.lightGreen,
+                  child: Icon(Icons.star, size: 48),
+                ),
+                PpCartoonButton(
+                  backgroundColor: Colors.pink,
+                  child: Column(
+                    children: [
+                      const Icon(Icons.heart_broken, size: 48),
+                      Container(
+                        color: Colors.purple,
+                        padding: const EdgeInsets.all(4),
+                        child: const Text('Heart Broken'),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
