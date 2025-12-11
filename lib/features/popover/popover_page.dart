@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:auto_route/auto_route.dart';
-import 'package:pp_ui/widgets/app_bar/pp_app_bar.dart';
+import 'package:pp_ui/pp_ui.dart';
 
 @RoutePage(name: "PopoverPageRoute")
 class PopoverPage extends StatefulWidget {
