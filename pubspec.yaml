@@ -17,6 +17,9 @@ dependencies:
   flutter_bloc: ^9.1.1
   provider: ^6.1.5+1
 
+  pp_ui:
+    git: git@github.com:henryypin/pp_ui.git
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -39,4 +42,3 @@ flutter:
           weight: 600
         - asset: assets/fonts/NotoSansTC-Bold.ttf
           weight: 700
-

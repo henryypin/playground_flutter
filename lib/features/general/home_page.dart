@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:auto_route/auto_route.dart';
 
-import 'package:playground_flutter/pp_ui/painting/shadow/pp_basic_shadow.dart';
-import 'package:playground_flutter/pp_ui/pp_ui.dart';
-import 'package:playground_flutter/pp_ui/widgets/gesture/pp_press.dart';
 import 'package:playground_flutter/shared/routes/app_router.dart';
 import 'package:playground_flutter/shared/routes/app_router.gr.dart';
+import 'package:pp_ui/pp_ui.dart';
 
 @RoutePage(name: "HomePageRoute")
 class HomePage extends StatefulWidget {

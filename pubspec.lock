@@ -427,6 +427,15 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.5.2"
+  pp_ui:
+    dependency: "direct main"
+    description:
+      path: "."
+      ref: HEAD
+      resolved-ref: d461c1724342068f5bbbc7d1231f761b8078301a
+      url: "git@github.com:henryypin/pp_ui.git"
+    source: git
+    version: "0.0.1"
   provider:
     dependency: "direct main"
     description:
