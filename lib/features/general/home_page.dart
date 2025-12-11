@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 import 'package:auto_route/auto_route.dart';
+import 'package:pp_ui/pp_ui.dart';
 
 import 'package:playground_flutter/shared/routes/app_router.dart';
 import 'package:playground_flutter/shared/routes/app_router.gr.dart';
-import 'package:pp_ui/pp_ui.dart';
 
 @RoutePage(name: "HomePageRoute")
 class HomePage extends StatefulWidget {
@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> with PpThemedState<HomePage> {
             runSpacing: 8,
             children: [
               _buildItem(title: "Button", route: const ButtonPageRoute()),
+              _buildItem(title: "Popover", route: const PopoverPageRoute()),
             ],
           ),
         ),

@@ -20,5 +20,6 @@ class AppRouter extends RootStackRouter {
       transitionsBuilder: TransitionsBuilders.noTransition,
     ),
     AutoRoute(page: ButtonPageRoute.page),
+    AutoRoute(page: PopoverPageRoute.page),
   ];
 }
